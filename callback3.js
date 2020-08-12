@@ -1,5 +1,5 @@
 function tayoBIs(nilaiWal, nilaiAkhir, TypeArray) {
-    if(nilaiWal < nilaiAkhir) {
+    if(nilaiWal > nilaiAkhir) {
         return "Nilai akhir harus lebih besar dari nilai awal"
     } else {
     if(TypeArray.length <= 5){
@@ -14,4 +14,5 @@ function tayoBIs(nilaiWal, nilaiAkhir, TypeArray) {
     }
 }
 
-console.log(tayoBIs(20, 5 , [2, 25, 4,]))
+console.log(tayoBIs(5, 20, [2, 25, 4, 14, 17, 30, 8]))
+
