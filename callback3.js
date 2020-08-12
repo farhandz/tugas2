@@ -1,18 +1,18 @@
 function tayoBIs(nilaiWal, nilaiAkhir, TypeArray) {
-    if(nilaiWal > nilaiAkhir) {
-        return "Nilai akhir harus lebih besar dari nilai awal"
+    if(nilaiWal < nilaiAkhir) {
+        if (TypeArray.length <= 5) {
+            return "data array kurang dari 5"
+        } else {
+            let data = TypeArray.filter(e => e > nilaiWal && e < nilaiAkhir)
+            return data.sort(function (a, b) {
+                return a - b
+            })
+        }
     } else {
-    if(TypeArray.length <= 5){
-        return "Jumlah angka dalam dataArray tidak ada"
-    }  else{
-        let data = TypeArray.filter(e => e > 5 && e < 20)
-     return data.sort(function(a,b) {
-        return a-b
-      })
-    }
-
+        return "Nilai akhir harus lebih besar dari nilai awal"
+    
     }
 }
 
-console.log(tayoBIs(5, 20, [2, 25, 4, 14, 17, 30, 8]))
+console.log(tayoBIs(5, 20, [2, 4, 14, 17, 18, 15 ]))
 
