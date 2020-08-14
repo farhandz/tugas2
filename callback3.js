@@ -14,5 +14,5 @@ function tayoBIs(nilaiWal, nilaiAkhir, TypeArray) {
     }
 }
 
-console.log(tayoBIs(5, 20, [2, 4, 14, 17, 18, 15 ]))
+console.log(tayoBIs(5, 20, [2, 4, 14,]))
 
