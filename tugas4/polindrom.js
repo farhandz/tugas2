@@ -3,7 +3,7 @@ data = (polimcrom) => {
         console.log("input harus string dan harus di isi")
     } else {
         const pol = polimcrom.split('').reverse().join('')
-        if (pol === polimcrom) {
+        if (pol.toLowerCase() === polimcrom.toLowerCase()) {
             console.log("ini polindrom")
         } else {
             console.log("ini bukan polindrom")
@@ -12,4 +12,4 @@ data = (polimcrom) => {
     
 }
 
-data("malam")
+data("Kasur RUsak")

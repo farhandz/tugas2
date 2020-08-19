@@ -1,10 +1,14 @@
-const devideSort = (...int) => {
-    const data = int.join(' ').split(0)
-    let tayo = ''
-    for(let i = 0; i < data.length; i++) {
-        let hh = data[i].split('').sort().join('')
-        tayo += hh
+
+const devideSort = (int) => {
+    if(typeof int !== "number" || !int) {
+       return "data harus number dan harus di isi"
+    } else {
+        const split = String(int).split(0)
+        const intg = split.map((dt, i) => split[i].split('').sort().join('')).join('')
+        return parseInt(intg)
     }
-    return tayo
 }
-console.log(devideSort(5956560159466056))
+console.log(devideSort(3452626067570787))
+console.log(devideSort('5956560159466056'))
+
+
