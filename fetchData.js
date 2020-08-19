@@ -1,5 +1,4 @@
-const fetch = require('node-fetch');
-let url = "https://jsonplaceholder.typicode.com/users";
+let url = "https://jsonplaceholder.typicode.com/user";
 let setting = {method: "Get"}
 fetch(url, setting)
 .then(data => {

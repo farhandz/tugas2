@@ -1,10 +1,9 @@
 const  readlineSync = require('readline-sync'),
 chalk = require('chalk')
-const Data = (callback) => {
+const Data = () => {
     return new Promise ((resolve, reject) => {
         // aplikasi pemghitung jumlah pengeluaran sehari hari
         const gaji = readlineSync.question('masukan jumlah gaji anda tuan?  ');
-        const parseINt = parseInt(gaji)
     let hasil = 0
     while (true) {
         console.log("input jumlah pengeluaran anda")

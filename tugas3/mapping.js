@@ -1,8 +1,8 @@
 const getMount = (callback) => {
-    
     setTimeout(()=> {
         let error = true
-        let month = null
+        let month = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
+            'Agustus', 'September', 'October', 'November', 'December']
         if (!error) {
             callback(null,month)
         } else {
@@ -12,18 +12,18 @@ const getMount = (callback) => {
 }
 
 
-// getMount((undifined,month) => {
-//    if(undifined || !month) {
-//        console.error(undifined.message)
-//    } else {
-//        month.map(mp => console.log(mp))
-//    }
-// })
-
-getMount(function(msg, month) {
-    if (msg) {
+getMount((msg,month) => {
+   if(msg) {
        console.error(msg.message)
    } else {
        month.map(mp => console.log(mp))
    }
 })
+
+// getMount(function(msg, month) {
+//     if (msg) {
+//        console.error(msg.error)
+//    } else {
+//        month.map(mp => console.log(mp))
+//    }
+// })

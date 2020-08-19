@@ -13,15 +13,15 @@ const cekHarikerja = (day) => {
         }, 3000)
     })
 }
-const tampung = cekHarikerja('kamis')
-// tampung.then(tp => console.log(tp))
-// .catch(err => console.error(err.message))
+const tampung = cekHarikerja('sabtu')
+// tampung.then(tp => console.log(`hari ${tp} hari kerja`))
+// .catch(err => console.error(err))
 const Async = async() => {
     try {
-        const data = await tampung
-        console.log(data)
+         const hari = await tampung
+        console.log(`hari ${hari} hari kerjaa`)
     } catch (error) {
-        console.log(error.message)
+        console.log(error)
     }
 }
 Async()
