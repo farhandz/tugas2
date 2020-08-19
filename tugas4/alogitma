@@ -1,0 +1,11 @@
+1. membuat sebuah function yang di dalam nya memiliki parameter
+2. kemudian di validasi apakah parameter tersebut tidak berupa number atau  parameter tersebut kosong
+3. bila terpenuhi salah satu maka akan me return "data harus number dan harus di isi"
+4. jika tidak,  akan membuat sebuah Variable1 yang isinya mengubah parameter tersebut ke string dan memisahkan anatar kalimatnya jika terdapat noll
+5. membuat variable2 yang isinya mapping variable1 yang akan kemudian split(bertujuan agar bisa mengunakan unction sort) kemuaian join hasil mapping tersebut untuk menghilangkan array pertama
+6. join lagi variable2 untuk menjadikanya string kemudaian di parseinteger agar hasilnya menjadi integer
+7. selesai
+
+
+flowchart
+https://drive.google.com/file/d/1HHDMIB6hI06Ir4B0bPzsJbKdjuetCNcO/view?usp=sharing
